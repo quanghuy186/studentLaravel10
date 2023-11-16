@@ -2,9 +2,8 @@
 @section('content')
  
 <div class="card">
-  <div class="card-header">Contactus Page</div>
+  <div class="card-header">Student Page</div>
   <div class="card-body">
-      
       <form action="{{ url('student') }}" method="post">
         {!! csrf_field() !!}
         <label>Name</label> <br>
