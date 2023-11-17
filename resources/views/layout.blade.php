@@ -64,7 +64,6 @@
             }
             }
     </style>
-
 </head>
 
 <body>
@@ -77,29 +76,35 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>               
               </nav>
-            </div>
-           
+            </div> 
         </div>
-
         <div class="row">
             <div class="col-md-3">
                 <div class="sidebar">
                     <a class="active" href="/">Home</a>
-                    <a href="{{ url('student') }}">Student</a>
-                    <a href="{{ url('teacher') }}">Teacher</a>
-                    <a href="{{ url('course') }}">Course</a>
-                    <a href="{{ url('enrollment') }}">Enrollment</a>
-                    <a href="{{ url('payment') }}">Payment</a>
+                    <a id="student" href="{{ url('student') }}">Student</a>
+                    <a id="teacher" href="{{ url('teacher') }}">Teacher</a>
+                    <a id="course" href="{{ url('course') }}">Course</a>
+                    <a id="Batche" href="{{ url('batch') }}">Batche</a>
+                    <a id="errollment" href="{{ url('enrollment') }}">Enrollment</a>
+                    <a id="payment" href="{{ url('payment') }}">Payment</a>
                 </div>
             </div>
-
             <div class="col-md-9">
                 @yield('content')
-            </div>
-
-         
+            </div>      
         </div>
     </div>
+
+  <script>
+    var x = document.getElementById("student")
+    x.addEventListener("click", mySecondFunction);
+
+    function mySecondFunction(){
+      
+    }
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
