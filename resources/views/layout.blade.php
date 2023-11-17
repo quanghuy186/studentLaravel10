@@ -94,8 +94,9 @@
             </div>
 
             <div class="col-md-9">
-                @yield('content');
+                @yield('content')
             </div>
+
          
         </div>
     </div>
