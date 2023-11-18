@@ -23,6 +23,8 @@ class EnrollmentController extends Controller
      */
     public function create(): View
     {
+        // $enrollment = Enrollment::pluck('name', 'id');
+        // return view('enrollment.create', compact('enrollment'));
         return view('enrollment.create');
     }
 

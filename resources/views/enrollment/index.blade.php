@@ -14,8 +14,8 @@
                                     <tr>
                                         <th>#</th>
                                         <th>eroll_no</th>
-                                        <th>batch_id</th>
-                                        <th>student_id</th>
+                                        <th>batch</th>
+                                        <th>student</th>
                                         <th>join_date</th>
                                         <th>fee</th>
                                         <th>Actions</th>
@@ -26,8 +26,8 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->eroll_no }}</td>
-                                        <td>{{ $item->batch_id }}</td>
-                                        <td>{{ $item->student_id }}</td>
+                                        <td>{{ $item->batch->name }}</td>
+                                        <td>{{ $item->student->name }}</td>
                                         <td>{{ $item->join_date }}</td>
                                         <td>{{ $item->fee }}</td>
                                         <td>
