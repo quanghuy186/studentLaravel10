@@ -28,7 +28,7 @@ class BatchController extends Controller
         return view('batch.create', compact('course'));
         // return view('batch.create');
     }
-
+    
     /**
      * Store a newly created resource in storage.
      */

@@ -6,7 +6,6 @@ use App\Models\Enrollment;
 use App\Models\Payment;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Routing\Redirector;
 use Illuminate\View\View;
 
 class PaymentController extends Controller
@@ -58,7 +57,6 @@ class PaymentController extends Controller
         return view('payment.edit', compact('payments','enrollments'));
 
     }
-
     /**
      * Update the specified resource in storage.
      */

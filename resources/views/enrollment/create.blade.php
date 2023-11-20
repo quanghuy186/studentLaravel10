@@ -18,7 +18,6 @@
         <input type="text" name="fee" id="fee" class="form-control"><br>
         <input type="submit" value="Save" class="btn btn-success"><br>
     </form>
-   
   </div>
 </div>
  
